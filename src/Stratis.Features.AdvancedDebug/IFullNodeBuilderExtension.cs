@@ -7,7 +7,7 @@ namespace Stratis.Features.AdvancedDebug
     /// <summary>
     /// A class providing extension methods for <see cref="IFullNodeBuilder"/>.
     /// </summary>
-    public static class IFullNodeBuilderExtnsion
+    public static class IFullNodeBuilderExtension
     {
         /// <summary>
         /// Uses the Proven Headers feature.

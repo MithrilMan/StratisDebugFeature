@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stratis.Features.AdvancedDebug", "src\Stratis.Features.AdvancedDebug\Stratis.Features.AdvancedDebug.csproj", "{F17E5DD4-E281-4696-9745-A258DB45B119}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stratis.Features.AdvancedDebug.Example", "src\Stratis.Features.AdvancedDebug.Example\Stratis.Features.AdvancedDebug.Example.csproj", "{51AB58D5-C204-4E39-B02F-24F0C06DF749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{157F594E-C3E7-470B-981F-582782B8B83A}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Stratis.ruleset = src\Stratis.ruleset
+		src\stylecop.json = src\stylecop.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F17E5DD4-E281-4696-9745-A258DB45B119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17E5DD4-E281-4696-9745-A258DB45B119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17E5DD4-E281-4696-9745-A258DB45B119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17E5DD4-E281-4696-9745-A258DB45B119}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51AB58D5-C204-4E39-B02F-24F0C06DF749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51AB58D5-C204-4E39-B02F-24F0C06DF749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51AB58D5-C204-4E39-B02F-24F0C06DF749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51AB58D5-C204-4E39-B02F-24F0C06DF749}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {305D3073-205A-43AF-A43A-A6C1B605EF31}
+	EndGlobalSection
+EndGlobal

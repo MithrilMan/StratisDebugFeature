@@ -1,0 +1,19 @@
+<Project>
+   <PropertyGroup>
+      <LangVersion>latest</LangVersion>
+   </PropertyGroup>
+
+   <PropertyGroup>
+      <!-- Common ruleset shared by all projects -->
+      <CodeAnalysisRuleset>$(MSBuildThisFileDirectory)Stratis.ruleset</CodeAnalysisRuleset>
+   </PropertyGroup>
+
+   <ItemGroup>
+      <!-- Add reference to StyleCop analyzers to all projects  -->
+      <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+
+      <!-- Common StyleCop configuration -->
+      <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" />
+   </ItemGroup>
+
+</Project>

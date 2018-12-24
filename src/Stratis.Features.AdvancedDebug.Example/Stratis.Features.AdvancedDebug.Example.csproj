@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>netcoreapp2.1</TargetFramework>
+   </PropertyGroup>
+
+   <ItemGroup>
+     <None Remove="nlog.config" />
+   </ItemGroup>
+
+   <ItemGroup>
+     <Content Include="NLog.config">
+       <SubType>Designer</SubType>
+       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+     </Content>
+   </ItemGroup>
+
+   <ItemGroup>
+      <PackageReference Include="Stratis.Bitcoin" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Api" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Features.BlockStore" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Features.Consensus" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Features.MemoryPool" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Features.Miner" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Features.RPC" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Features.Wallet" Version="3.0.0.4-beta" />
+      <PackageReference Include="Stratis.Bitcoin.Networks" Version="3.0.0.4-beta" />
+   </ItemGroup>
+
+   <ItemGroup>
+     <ProjectReference Include="..\Stratis.Features.AdvancedDebug\Stratis.Features.AdvancedDebug.csproj" />
+   </ItemGroup>
+
+</Project>

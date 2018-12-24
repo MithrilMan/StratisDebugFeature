@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Stratis.Features.AdvancedDebug.Example": {
+      "commandName": "Project"
+    },
+    "Testnet": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet"
+    }
+  }
+}

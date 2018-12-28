@@ -1,7 +1,38 @@
+html {
+   height: 100%;
+}
+
 body {
    font-family: Arial, sans-serif;
-   background: #333;
-   color: white;
+   background: #FFF;
+   color: #000;
+   display: flex;
+   flex-direction: column;
+   margin: 0px;
+   height: 100%;
+   padding: 0 3px;
+}
+
+#logPanel {
+   display: none;
+   font-family: monospace;
+   font-size: 1em;
+   background: #444;
+   color: #999;
+   overflow: auto;
+   flex: 1 1 auto;
+   flex-direction: row;
+   margin: 3px;
+}
+
+   #logPanel.connected {
+      display: flex;
+   }
+
+#serverlog {
+   padding: 3px;
+   flex-direction: column;
+   height: 100%;
 }
 
 .hide-when-not-connected {
@@ -12,9 +43,8 @@ body {
    display: block;
 }
 
-
    .connected .hide-when-not-connected p {
-      color: #33ff44
+      color: #1966ca;
    }
 
 .connected .hide-when-connected {
@@ -44,12 +74,8 @@ button {
       border: 1px solid #B0281A;
    }
 
-#serverlog {
-   background: #444;
-   color: #999;
-   width: 480px;
-   height: 180px;
-   border: 1px solid #666;
-   padding: 3px;
-   overflow: auto;
+
+#top-titlebar-icon {
+   width: 18px;
+   height: 18px;
 }
